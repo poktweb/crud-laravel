@@ -16,16 +16,18 @@
 
     <form action="/cadastrar" method="post">
         @csrf
-        <div class="row">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Seu Nome..." name="nome">
-          </div>
+        <div class="container" id="container-form">
+            <div class="mb-3">
+                <label class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome">
+            </div>
 
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Seu Telefone..." name="telefone">
-          </div>
+            <div class="mb-3">
+                <label class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="telefone1" name="telefone">
+            </div>
 
-          <button class="btn btn-primary">Cadastrar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
         </div>
       </form>
 </body>
